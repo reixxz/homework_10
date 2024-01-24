@@ -35,8 +35,8 @@ if __name__ == "__main__":
 
     if current_temperature:
         save_to_database(current_date_time, current_temperature)
-        print("Дані успішно збережено.")
+        print("Дані успішно збережено")
     else:
-        print("Не вдалося отримати дані про температуру.")
+        print("Не вдалося отримати дані про температуру")
 
 
