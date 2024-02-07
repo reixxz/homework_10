@@ -1,10 +1,16 @@
 import time
 
-start = time.time()
+def task_to_measure():
 
-def example_function(x, y):
-    return x + y
+    my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+    sorted_list = sorted(my_list)
+    print("Відсортований список:", sorted_list)
 
-end = time.time() - start
+def measure_time(func):
+    start_time = time.time()
+    func()
+    end_time = time.time()
+    execution_time = end_time - start_time
+    print("Час виконання функції:", execution_time, "секунд")
 
-print(end)
+measure_time(task_to_measure)
